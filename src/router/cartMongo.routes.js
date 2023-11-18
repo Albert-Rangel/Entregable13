@@ -1,5 +1,5 @@
 import Router from "express"
-import CartManager from '../controllers/CartManager.js'
+import CartManager from '../dao/Mongo/CartManager.js'
 const cartManager = new CartManager('./src/models/carts.json');
 const CartRoute = Router();
 
@@ -99,7 +99,7 @@ CartRoute.delete('/:cid/product/:pid', async function (req, res) {
     const id = req.params.pid
     console.log("router paraa eliminar un producto especifico")
 
-   const pidstring = SON.stringify(id)
+   const pidstring = JSON.stringify(id)
     console.log(cid)
     console.log(pidstring)
 

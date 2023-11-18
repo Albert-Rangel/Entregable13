@@ -1,10 +1,10 @@
 import express, { Router, json } from "express"
-import { uploader } from '../dao/middlewares/multer.js'
-import ProductManager from '../controllers/ProductManager.js'
-import CartManager from '../controllers/CartManager.js'
-import publicRoutes from "../dao/middlewares/publicRoutes.js"
-import privateRoutes from "../dao/middlewares/privateRoutes.js"
-import permissionsRoutes from "../dao/middlewares/adminpermissionsRoutes.js"
+import { uploader } from '../middlewares/multer.js'
+import ProductManager from '../dao/Mongo/ProductManager.js'
+import CartManager from '../dao/Mongo/CartManager.js'
+import publicRoutes from "../middlewares/publicRoutes.js"
+import privateRoutes from "../middlewares/privateRoutes.js"
+import permissionsRoutes from "../middlewares/adminpermissionsRoutes.js"
 
 const productManager = new ProductManager();
 const cartManager = new CartManager()

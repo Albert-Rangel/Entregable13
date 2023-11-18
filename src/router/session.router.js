@@ -1,9 +1,9 @@
 import { Router, json } from 'express';
 import bcrypt from 'bcrypt';
 import { userModel } from '../dao/models/user.model.js';
-import publicRoutes from "../dao/middlewares/publicRoutes.js"
+import publicRoutes from "../middlewares/publicRoutes.js"
 import passport from 'passport';
-import privateRoutes from '../dao/middlewares/privateRoutes.js';
+import privateRoutes from '../middlewares/privateRoutes.js';
 import { fork } from "child_process"
 
 const router = Router();

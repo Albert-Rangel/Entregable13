@@ -1,5 +1,5 @@
 
-import productsService from '../services/productsService.js';
+import productsService from '../../services/productsService.js';
 const productService = new productsService()
 
 class ProductManager {

@@ -3,11 +3,11 @@ import handlebars from "express-handlebars"
 import { Server } from 'socket.io'
 import __dirname from './utils.js'
 import ProductRoutes from './router/productMongo.routes.js'
-import CartManager from './controllers/CartManager.js'
+import CartManager from './dao/Mongo/CartManager.js'
 import ChatsRoutes from './router/chat.routes.js'
 import CartRoutes from './router/cartMongo.routes.js'
 import EmailsRoutes from './router/email.routes.js'
-import ProductManager from './controllers/ProductManager.js'
+import ProductManager from './dao/Mongo/ProductManager.js'
 import ViewsRouter from './router/views.routes.js'
 import SessionRouter from './router/session.router.js'
 import passport from "passport"

@@ -1,6 +1,6 @@
 import express, { Router } from "express"
-import userpermissionsRoutes from '../dao/middlewares/userpermissionsRoutes.js';
-import privateRoutes from '../dao/middlewares/privateRoutes.js';
+import userpermissionsRoutes from '../middlewares/userpermissionsRoutes.js';
+import privateRoutes from '../middlewares/privateRoutes.js';
 
 const router = express.Router()
 
