@@ -10,8 +10,16 @@ import {
   deleteProduct,
 
 } from '../Mongo/ProductManager.js'
+
+import CustomError from '../../services/errors/customError.js';
+import EError from '../../services/errors/enum.js';
+import { generateUserErrorInfo, generategeneralExepction } from '../../services/errors/info.js';
+
 import cartsService from '../../services/cartService.js';
 import emailsService from '../../services/emailService.js';
+
+
+
 const emailService = new emailsService()
 const CartsService = new cartsService()
 // const productManager = new ProductManager()
@@ -49,6 +57,7 @@ function ManageAnswer(answer) {
 export const addCart = async (req, res) => {
 
   try {
+
     let carnew = await CartsService.addCartviaService()
     const arrayAnswer = ManageAnswer(carnew)
 
@@ -58,9 +67,10 @@ export const addCart = async (req, res) => {
     })
 
   } catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
-      message: `Se ha arrojado una exepcion: error`
+      message: `Error occured in CartManager in AddProduct`
     })
   }
 }
@@ -69,6 +79,16 @@ export const addCartProducts = async (req, res) => {
   try {
     const pid = req.params.pid
     const cid = req.params.cid
+
+    if (!pid || !cid) {
+      CustomError.CreateError({
+        name: "General Exeption",
+        cause: generategeneralExepction("error supuesto por validacioens"),
+        message: "Error occured in CartManager in addCartProducts",
+        code: EError.INVALID_TYPE_ERROR
+      })
+    }
+
     const answer = await CartsService.addCartProductsviaService(pid, cid)
     const arrayAnswer = ManageAnswer(answer)
     return res.status(arrayAnswer[0]).send({
@@ -77,6 +97,7 @@ export const addCartProducts = async (req, res) => {
     })
 
   } catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -86,6 +107,7 @@ export const addCartProducts = async (req, res) => {
 export const getCarts = async (req, res) => {
   try {
     const limit = req.query.limit;
+
     const allCarts = await CartsService.getcartsviaService();
 
     if (allCarts == undefined) return res.status().send({
@@ -109,6 +131,7 @@ export const getCarts = async (req, res) => {
     return res.send(allCarts.sort((a, b) => a.id - b.id))
 
   } catch (error) {
+    console.log(error)
     return res.status().send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -118,6 +141,16 @@ export const getCarts = async (req, res) => {
 export const getCartById = async (req, res) => {
   try {
     const cid = req.params.cid
+
+    if (!cid) {
+      CustomError.CreateError({
+        name: "General Exeption",
+        cause: generategeneralExepction("error supuesto por validacioens"),
+        message: "Error occured in CartManager in getCartById",
+        code: EError.INVALID_TYPE_ERROR
+      })
+    }
+
     const CartById = await CartsService.getCartbyIDviaService(cid)
 
     if (CartById == undefined) return res.status().send({
@@ -137,6 +170,7 @@ export const getCartById = async (req, res) => {
     return res.send(CartById);
 
   } catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -149,6 +183,14 @@ export const getProductsinCartById = async (req, res) => {
     let swWeb = false
     if (req.params != undefined) {
       cid = req.params.cid
+      if (!cid) {
+        CustomError.CreateError({
+          name: "General Exeption",
+          cause: generategeneralExepction("error supuesto por validacioens"),
+          message: "Error occured in CartManager in getProductsinCartById",
+          code: EError.INVALID_TYPE_ERROR
+        })
+      }
     } else {
       swWeb = true
       if (req.cid == undefined) {
@@ -170,6 +212,7 @@ export const getProductsinCartById = async (req, res) => {
     }
     return swWeb ? answer : res.send(answer);
   } catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -179,6 +222,14 @@ export const getProductsinCartById = async (req, res) => {
 export const getProductsinCartByIdPagination = async (req, res) => {
   try {
     const cid = req.params.cid
+    if (!cid) {
+      CustomError.CreateError({
+        name: "General Exeption",
+        cause: generategeneralExepction("error supuesto por validacioens"),
+        message: "Error occured in CartManager in getProductsinCartByIdPagination",
+        code: EError.INVALID_TYPE_ERROR
+      })
+    }
     const answer = await CartsService.getProductsinCartbyIDviaServicePagination(cid)
     const isString = (value) => typeof value === 'string';
     if (isString(answer)) {
@@ -190,6 +241,7 @@ export const getProductsinCartByIdPagination = async (req, res) => {
       return res.send(answer);
     }
   } catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -199,6 +251,14 @@ export const getProductsinCartByIdPagination = async (req, res) => {
 export const deleteCart = async (req, res) => {
   try {
     const cid = req.params.cid
+    if (!cid) {
+      CustomError.CreateError({
+        name: "General Exeption",
+        cause: generategeneralExepction("error supuesto por validacioens"),
+        message: "Error occured in CartManager in deleteCart",
+        code: EError.INVALID_TYPE_ERROR
+      })
+    }
     const answer = await CartsService.deleteCartviaService({ _id: cid })
     const arrayAnswer = ManageAnswer(answer)
     const anwserObject = {
@@ -208,6 +268,7 @@ export const deleteCart = async (req, res) => {
     return res.send(anwserObject);
   }
   catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -224,6 +285,14 @@ export const deleteCartProduct = async (req, res) => {
     if (req.params != undefined) {
       cid = req.params.cid
       pid = req.params.pid
+      if (!cid || !pid) {
+        CustomError.CreateError({
+          name: "General Exeption",
+          cause: generategeneralExepction("error supuesto por validacioens"),
+          message: "Error occured in CartManager in deleteCartProduct",
+          code: EError.INVALID_TYPE_ERROR
+        })
+      }
       // pidstring = JSON.stringify(pid)
     } else {
       swWeb = true
@@ -240,7 +309,7 @@ export const deleteCartProduct = async (req, res) => {
     return swWeb ? anwserObject : res.send(anwserObject);
   }
   catch (error) {
-
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -250,6 +319,15 @@ export const deleteCartProduct = async (req, res) => {
 export const deleteAllCartProducts = async (req, res) => {
   try {
     const cid = req.params.cid
+    if (!cid) {
+      CustomError.CreateError({
+        name: "General Exeption",
+        cause: generategeneralExepction("error supuesto por validacioens"),
+        message: "Error occured in CartManager in deleteAllCartProducts",
+        code: EError.INVALID_TYPE_ERROR
+      })
+    }
+
     const answer = await CartsService.deleteAllCartProductsviaService(cid)
     const arrayAnswer = ManageAnswer(answer)
     const anwserObject = {
@@ -277,7 +355,16 @@ export const updateCartProductQuantity = async (req, res) => {
 
       cid = req.params.cid
       pid = req.params.pid
-      console.log(quantity_)
+      quantity_ = req.body.quantity
+      if (!cid || !pid) {
+        CustomError.CreateError({
+          name: "General Exeption",
+          cause: generategeneralExepction("error supuesto por validacioens"),
+          message: "Error occured in CartManager in updateCartProductQuantity",
+          code: EError.INVALID_TYPE_ERROR
+        })
+      }
+
     } else {
       console.log("entro en web")
       swWeb = true
@@ -285,8 +372,8 @@ export const updateCartProductQuantity = async (req, res) => {
       pid = req.pid
       quantity_ = req.finalqtt
     }
-    console.log("2")
-
+    console.log("va a llamar a updateProductQuantityviaService")
+    console.log(pid + " " +  cid +  " "+ quantity_)
     const answer = await CartsService.updateProductQuantityviaService(pid, cid, quantity_)
 
     const arrayAnswer = ManageAnswer(answer)
@@ -299,6 +386,7 @@ export const updateCartProductQuantity = async (req, res) => {
     //return anwserObject
   }
   catch (error) {
+    console.log(error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -314,6 +402,15 @@ export const updateCartProducts = async (req, res) => {
     if (req.params != undefined) {
       cid = req.params.cid
       products = req.body
+      if (!cid || !products) {
+        CustomError.CreateError({
+          name: "General Exeption",
+          cause: generategeneralExepction("error supuesto por validacioens"),
+          message: "Error occured in CartManager in updateCartProducts",
+          code: EError.INVALID_TYPE_ERROR
+        })
+      }
+
     } else {
       swWeb = true
       cid = req.cid
@@ -343,13 +440,21 @@ export const purchaseCart = async (req, res) => {
     if (req.params != undefined && req.session.user == undefined) {
       cid = req.params.cid
       email = "claudie.funk69@ethereal.email"
+      if (!cid || !email) {
+        CustomError.CreateError({
+          name: "General Exeption",
+          cause: generategeneralExepction("error supuesto por validacioens"),
+          message: "Error occured in CartManager in updateCartProducts",
+          code: EError.INVALID_TYPE_ERROR
+        })
+      }
     } else {
 
       swWeb = true
       cid = req.session.user.cart
       email = req.session.user.email
     }
-  
+
 
     let totalsum = 0
     //obtener los productos dentro del carrito

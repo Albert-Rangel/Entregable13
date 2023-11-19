@@ -71,12 +71,12 @@ export default class cartsService {
 
     async getProductsinCartbyIDviaService(cid) {
         try {
-           
+
             const cartObject = await cartsModel.find({ _id: cid }).lean()
             if (cartObject == undefined || Object.keys(cartObject).length === 0) return `E02|El carro con el id ${cid} no se encuentra agregado.`;
 
             const products = cartObject[0].products;
-        
+
             return products
 
         } catch (error) {
@@ -212,9 +212,10 @@ export default class cartsService {
             const cartObject = await cartsModel.findById({ _id: cid })
             if (cartObject == undefined || Object.keys(cartObject).length === 0 || cartObject.length === 0) return `E02|El carro con el id ${cid} no se encuentra agregado.`;
 
+            
             const productObject = await productsModel.find({ _id: pid })
             if (productObject == undefined || Object.keys(productObject).length === 0 || productObject.length === 0) return `E02|El producto con el id ${pid} no se encuentra agregado.`;
-
+            console.log("cart" +cartObject)
             let updateObject = await cartsModel.updateOne({
                 "_id": cid,
                 "products.id": pid
@@ -226,7 +227,7 @@ export default class cartsService {
             if (updateObject.modifiedCount > 0) {
                 return `SUC|Producto actualizado del carrito`
             } else {
-                return `E02|No se pudo actualizar el productocon el id ${pid}`;
+                return `E02|No se pudo actualizar el productocon el id ${cid}`;
             }
 
         } catch (error) {

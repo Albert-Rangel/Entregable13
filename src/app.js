@@ -17,6 +17,7 @@ import ChatsRoutes from './router/chat.routes.js'
 import MockRoutes from './router/mock.routes.js'
 import CartRoutes from './router/cartMongo.routes.js'
 import EmailsRoutes from './router/email.routes.js'
+import errorHandler from './middlewares/errors/index.js'
 // import ProductManager from './dao/Mongo/ProductManager.js'
 import compression from "express-compression"
 import ViewsRouter from './router/views.routes.js'
@@ -148,6 +149,8 @@ initiaizePassport();
 app.use(compression({
   brotli: { enabled: true, zlib: {} }
 }))
+
+app.use(errorHandler)
 app.use(passport.initialize())
 app.use(passport.session())
 app.use('/api', SessionRouter)
