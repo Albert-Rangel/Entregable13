@@ -1,9 +1,8 @@
 const socket = io()
 let cid = ""
-console.log(socket)
-
 
 socket.on('AllProductsCart', (data) => {
+    console.log("AllProductsCart " +data)
     updateProductCatalogList(data);
 });
 

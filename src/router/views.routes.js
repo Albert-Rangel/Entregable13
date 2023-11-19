@@ -1,13 +1,25 @@
 import express, { Router, json } from "express"
 import { uploader } from '../middlewares/multer.js'
-import ProductManager from '../dao/Mongo/ProductManager.js'
-import CartManager from '../dao/Mongo/CartManager.js'
+// import ProductManager from '../dao/Mongo/ProductManager.js'
+// import CartManager from '../dao/Mongo/CartManager.js'
+import {
+    getProducts,
+    addProduct,
+    getProducts_,
+    getProductById,
+    updateProduct,
+    deleteProduct,
+  
+  }from '../dao/Mongo/ProductManager.js'
+import {
+    getProductsinCartById
+  } from "../dao/Mongo/CartManager.js";
 import publicRoutes from "../middlewares/publicRoutes.js"
 import privateRoutes from "../middlewares/privateRoutes.js"
 import permissionsRoutes from "../middlewares/adminpermissionsRoutes.js"
 
-const productManager = new ProductManager();
-const cartManager = new CartManager()
+// const productManager = new ProductManager();
+// const cartManager = new CartManager()
 const router = express.Router()
 
 router.get("/realTimeProducts", privateRoutes, permissionsRoutes, async (req, res) => {
@@ -19,7 +31,7 @@ router.get("/realTimeProducts", privateRoutes, permissionsRoutes, async (req, re
 
 router.get("/home", async (req, res) => {
 
-    const allProducts = await productManager.getProducts_()
+    const allProducts = await getProducts_()
 
     res.render("home", {
         title: "Cards Products",
@@ -42,10 +54,14 @@ router.get("/PersonalCart", async (req, res) => {
 })
 
 router.get("/PersonalCartStatic", async (req, res) => {
-    console.log("entro en el personal cart de viewsrouter")
+    console.log("entro en el personal cart de views.router")
     const cid = req.session.user.cart;
-    const allProducts = await cartManager.getProductsinCartById(cid)
-    console.log(allProducts)
+    // console.log("cid : " + cid )
+
+    const allProducts = await getProductsinCartById(cid)
+
+    // console.log(allProducts)
+
     res.render("cartStatic", {
         title: "Personal Shooping Cart",
         style: "catalog.css",
@@ -83,7 +99,7 @@ router.get("/products", privateRoutes, async (req, res) => {
 router.get("/carts/:cid", async (req, res) => {
 
     const cid = req.params.cid
-    const allProducts = await cartManager.getProductsinCartById(cid)
+    const allProducts = await getProductsinCartById(cid)
     const isString = (value) => typeof value === 'string';
     if (isString(allProducts)) {
         const arrayAnswer = ManageAnswer(allProducts)

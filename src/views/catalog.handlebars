@@ -1,5 +1,5 @@
 <div id="carta">
-    <img src="https://i.pinimg.com/originals/66/79/b6/6679b67c5fb579305d74dadd2029441c.jpg" width="300px">
+    {{!-- <img src="https://i.pinimg.com/originals/66/79/b6/6679b67c5fb579305d74dadd2029441c.jpg" width="300px"> --}}
 
     <h1> Bienvenid@ {{firstname}} {{lastname}} </h1>
     <p>
@@ -25,11 +25,11 @@
     {{!-- <a href="/PersonalCart" class="boton">
         See your Shoopin Cart
     </a> --}}
-
+    {{#if swUser}}
     <a href="/PersonalCartStatic" class="boton">
-        See your Shoopin Cart
+        See your Shooping Cart
     </a>
-
+    {{/if}}
     {{!-- <a href="/api/carts/cartPurchase" class="boton">
         See your Shooping Cart
     </a> --}}

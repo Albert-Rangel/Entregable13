@@ -58,7 +58,6 @@ export default class cartsService {
 
     async getCartbyIDviaService(cid) {
         try {
-
             const CartById = await cartsModel.find({ _id: cid }).lean()
 
             if (CartById == undefined || Object.keys(CartById).length === 0) return `E02|El carro con el id ${cid} no se encuentra agregado.`;
@@ -72,11 +71,12 @@ export default class cartsService {
 
     async getProductsinCartbyIDviaService(cid) {
         try {
+           
             const cartObject = await cartsModel.find({ _id: cid }).lean()
             if (cartObject == undefined || Object.keys(cartObject).length === 0) return `E02|El carro con el id ${cid} no se encuentra agregado.`;
 
             const products = cartObject[0].products;
-
+        
             return products
 
         } catch (error) {
@@ -121,7 +121,7 @@ export default class cartsService {
 
     async deleteCartProductviaService(pid, cid) {
         try {
-            // console.log("entro endeleteCartProductviaService")
+            console.log("entro endeleteCartProductviaService")
 
             const CartById = await cartsModel.findById({ _id: cid })
 
@@ -278,12 +278,5 @@ export default class cartsService {
         }
 
     }
-
-
-
-
-
-
-
 
 }

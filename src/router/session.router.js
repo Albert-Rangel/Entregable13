@@ -4,6 +4,7 @@ import { userModel } from '../dao/models/user.model.js';
 import publicRoutes from "../middlewares/publicRoutes.js"
 import passport from 'passport';
 import privateRoutes from '../middlewares/privateRoutes.js';
+
 import { fork } from "child_process"
 
 const router = Router();
@@ -30,8 +31,7 @@ router.post('/login', publicRoutes,
       admin: false,
       role: req.user.role,
     };
-    console.log("ya guardo el req.session.user es el siguiente")
-    console.log(req.session.user)
+   
     req.session.isLogged = true;
 
     res.redirect('/products');
@@ -71,7 +71,7 @@ router.get("/githubcallback",
 
     // Extract the hexadecimal representation
     const hexString = objectId_.toHexString();
-  
+
     req.session.user = {
       firstname: req.user.firstname,
       lastname: req.user.lastname,
@@ -91,10 +91,7 @@ router.get("/githubcallback",
 router.get(
   '/current', privateRoutes,
   async (req, res) => {
-    console.log("entro en currente")
     const objectId_ = req.user.cart[0]._id;
-    console.log(objectId_)
-
 
     // Extract the hexadecimal representation
     const hexString = objectId_.toHexString();
