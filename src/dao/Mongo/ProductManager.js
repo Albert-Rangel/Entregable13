@@ -50,6 +50,7 @@ export const getProducts = async (req, res) => {
       page = req.page;
       sort_ = req.sort;
       query = req.query;
+
     } else {
 
       limit = parseInt(req.query.limit, 10) == 0 || req.query.limit == null ? 20 : parseInt(req.query.limit, 10);
@@ -90,8 +91,12 @@ export const addProduct = async (req, res) => {
       swWeb = true
       newproduct = req
     } else {
+
       newproduct = req.body
+
+      newproduct = null
       if (!newproduct) {
+
         CustomError.CreateError({
           name: "General Exeption",
           cause: generategeneralExepction("error supuesto por validacioens"),
@@ -115,7 +120,7 @@ export const addProduct = async (req, res) => {
     console.log(error)
     return res.status(500).send({
       status: "500",
-      message: `Se ha arrojado una exepcion: error`
+      message:  `Se ha arrojado una exepcion: ${error} `
     })
   }
 }
@@ -142,7 +147,7 @@ export const getProducts_ = async (req, res) => {
       })
 
     }
-   
+
     return res.send(products);
 
   } catch (error) {
@@ -155,7 +160,6 @@ export const getProducts_ = async (req, res) => {
 }
 export const getProductById = async (req, res) => {
   try {
-   
 
     const pid = req.params.pid
     const found = await productService.getProductbyIDviaService({ _id: pid });
@@ -189,8 +193,8 @@ export const updateProduct = async (req, res) => {
       swINtern = true
       pid = req.pid;
       updatedproduct.stock = req.stock;
-     
-      if (!pid || !updatedproduct.stock ) {
+
+      if (!pid || !updatedproduct.stock) {
         CustomError.CreateError({
           name: "General Exeption",
           cause: generategeneralExepction("error supuesto por validacioens"),

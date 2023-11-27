@@ -1,7 +1,6 @@
 import express, { Router, json } from "express"
 import { uploader } from '../middlewares/multer.js'
-// import ProductManager from '../dao/Mongo/ProductManager.js'
-// import CartManager from '../dao/Mongo/CartManager.js'
+import  {generateProduct}  from "../services/mock.Service.js"
 import {
     getProducts,
     addProduct,
@@ -179,6 +178,21 @@ router.get('/failogin', publicRoutes, (req, res) => {
         style: "failLogin.css"
     })
 });
+
+
+router.get('/mockingproducts', (req, res) => {
+
+    let mockProducts = []
+    for (let i = 0; i < 100; i++) {
+        mockProducts.push(generateProduct())
+    }
+    res.send(
+        {status:"success",
+        message: "Products",
+        payload: mockProducts}
+    )
+});
+
 
 
 function ManageAnswer(answer) {
