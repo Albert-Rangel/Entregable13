@@ -1,0 +1,1898 @@
+error: error {"label":"logs","timestamp":"2023-11-26T19:21:44.746Z"}
+2023-11-26T19:24:05.047Z [logs] error: error
+2023-11-26T19:27:05.054Z [logs] error: error
+2023-11-26T19:29:56.393Z [logs] error: error
+2023-11-26T19:30:43.387Z [logs] error: error
+2023-11-26T19:37:11.468Z [logs] error: error
+2023-11-26T19:38:03.745Z [logs] error: error
+2023-11-26T19:38:03.746Z [logs] error: Error en CartManager/addCartProducts: TypeError: exceptions is not a constructor
+2023-12-03T17:26:55.158Z [logs] error: error
+2023-12-03T18:02:47.254Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:06:55.291Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:09:52.896Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:10:48.431Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:11:21.372Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:11:21.373Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: rrayAnswer is not defined
+2023-12-03T18:11:49.525Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:11:49.526Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: rrayAnswer is not defined
+2023-12-03T18:12:07.045Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:12:58.770Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:14:02.752Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:14:22.657Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:15:26.492Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:16:32.517Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:17:04.130Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:17:48.665Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:20:15.160Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:21:51.883Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T18:30:31.246Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot destructure property 'email' of 'req.params' as it is undefined.
+2023-12-03T18:48:45.368Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot destructure property 'email' of 'req' as it is undefined.
+2023-12-03T18:49:45.662Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot destructure property 'email' of 'req' as it is undefined.
+2023-12-03T18:50:24.268Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot destructure property 'email' of 'req' as it is undefined.
+2023-12-03T18:51:06.025Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot destructure property 'email' of 'req' as it is undefined.
+2023-12-03T18:54:08.831Z [logs] error: Error en PasswordService/sendEmailToResetPassword: TypeError: Cannot destructure property 'email' of 'req' as it is undefined.
+2023-12-03T19:07:31.817Z [logs] error: Error en PasswordService/sendEmailToResetPassword: ReferenceError: userPassword is not defined
+2023-12-03T19:26:33.919Z [logs] error: Error en emailService/sendEmail: Error: No recipients defined
+2023-12-03T19:40:14.788Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T19:41:53.420Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T19:42:09.127Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'params')
+2023-12-03T19:49:37.463Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot destructure property 'token' of 'req' as it is undefined.
+2023-12-03T19:52:22.618Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot destructure property 'password' of 'req' as it is undefined.
+2023-12-03T19:53:53.519Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot destructure property 'token' of 'req' as it is undefined.
+2023-12-03T19:54:38.627Z [logs] error: Error en PasswordManager/initRecovery: TypeError: Cannot destructure property 'token' of 'req.token' as it is undefined.
+2023-12-03T19:56:31.504Z [logs] error: Error en PasswordManager/initRecovery: TypeError: Cannot destructure property 'token' of 'req.token' as it is undefined.
+2023-12-03T19:57:28.178Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of null (reading 'email')
+2023-12-03T19:58:41.045Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of null (reading 'email')
+2023-12-03T20:11:30.727Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T20:12:31.741Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T20:14:14.346Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T20:17:03.212Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T20:17:57.493Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T20:18:31.413Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T20:20:57.896Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.getDataValue is not a function
+2023-12-03T21:09:44.262Z [logs] error: Error en PasswordService/resetPassword: SyntaxError: Expected property name or '}' in JSON at position 4
+2023-12-03T21:15:20.277Z [logs] error: Error en PasswordService/resetPassword: SyntaxError: Expected property name or '}' in JSON at position 4
+2023-12-03T21:15:20.590Z [logs] error: Error en PasswordService/resetPassword: SyntaxError: Expected property name or '}' in JSON at position 4
+2023-12-03T21:16:29.754Z [logs] error: Error en PasswordService/resetPassword: SyntaxError: Expected property name or '}' in JSON at position 4
+2023-12-03T21:17:41.135Z [logs] error: Error en PasswordService/resetPassword: SyntaxError: Expected property name or '}' in JSON at position 4
+2023-12-03T21:19:22.832Z [logs] error: Error en PasswordService/resetPassword: SyntaxError: Expected property name or '}' in JSON at position 4
+2023-12-03T21:33:20.378Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-03T21:34:15.908Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-03T21:34:37.851Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'isUsed')
+2023-12-03T21:35:13.675Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'isUsed')
+2023-12-03T21:35:36.698Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'isUsed')
+2023-12-03T22:43:29.139Z [logs] error: Error en PasswordManager/initRecovery: TypeError: res.Json is not a function
+2023-12-03T22:44:04.242Z [logs] error: Error en PasswordManager/initRecovery: TypeError: res.Json is not a function
+2023-12-03T22:45:09.852Z [logs] error: Error en PasswordManager/initRecovery: TypeError: res.Json is not a function
+2023-12-03T23:27:03.967Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:28:37.053Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:34:38.310Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:36:09.670Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:41:52.935Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:43:49.242Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:44:22.625Z [logs] error: Error en PasswordManager/initRecovery: ReferenceError: token is not defined
+2023-12-03T23:51:44.038Z [logs] error: Error en PasswordService/resetPassword: ReferenceError: email is not defined
+2023-12-03T23:55:58.128Z [logs] error: Error en PasswordService/resetPassword: TypeError: userPassword.setDataValue is not a function
+2023-12-04T00:01:43.075Z [logs] error: Error en PasswordService/resetPassword: ReferenceError: cartsModel is not defined
+2023-12-04T00:19:39.910Z [logs] error: Error en PasswordService/resetPassword: ReferenceError: previouspass is not defined
+2023-12-04T02:31:45.783Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-04T02:31:46.035Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-04T02:32:06.188Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-04T02:39:54.641Z [logs] error: Error en PasswordService/resetPassword: ReferenceError: newpassEncryp is not defined
+2023-12-04T23:20:12.749Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{ _id: '' }" (type Object) at path "_id" for model "products"
+2023-12-04T23:20:12.751Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-04T23:20:13.665Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{ _id: '' }" (type Object) at path "_id" for model "products"
+2023-12-04T23:20:13.667Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-04T23:20:13.881Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{ _id: '' }" (type Object) at path "_id" for model "products"
+2023-12-04T23:20:13.882Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-04T23:26:25.881Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-04T23:32:28.593Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-04T23:36:43.574Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-04T23:47:50.072Z [logs] error: Error en ProductManager/addProduct: TypeError: Cannot read properties of undefined (reading 'user')
+2023-12-04T23:49:09.347Z [logs] error: Error en ProductManager/addProduct: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-04T23:51:25.262Z [logs] error: Error en ProductManager/addProduct: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-04T23:51:54.928Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-04T23:54:31.805Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-04T23:54:37.260Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-04T23:59:11.955Z [logs] error: Error en ProductManager/addProduct: TypeError: Cannot read properties of undefined (reading 'user')
+2023-12-05T00:02:08.220Z [logs] error: Error en ProductManager/addProduct: TypeError: Cannot read properties of undefined (reading 'user')
+2023-12-05T00:56:15.347Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-05T01:12:58.575Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-05T02:10:21.429Z [logs] error: error
+2023-12-05T13:58:55.716Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T13:59:03.174Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T13:59:10.050Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T14:01:32.505Z [logs] error: Error en ProductManager/addProduct: TypeError: Cannot read properties of undefined (reading 'user')
+2023-12-05T14:20:36.496Z [logs] error: Error en ProductsService/addProductviaService: MongoServerError: E11000 duplicate key error collection: test.products index: code_1 dup key: { code: "1" }
+2023-12-05T14:29:59.827Z [logs] error: Error en ProductsService/addProductviaService: MongoServerError: E11000 duplicate key error collection: test.products index: code_1 dup key: { code: "1" }
+2023-12-05T14:39:37.727Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T14:39:42.157Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T14:39:46.904Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T14:42:44.602Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T14:50:36.726Z [logs] error: Error en ProductManager/getProducts: TypeError: Cannot read properties of null (reading 'limit')
+2023-12-05T14:54:56.760Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T14:59:08.590Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-05T15:01:00.166Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-05T15:02:24.282Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-05T15:05:06.481Z [logs] error: Error en PasswordService/resetPassword: TypeError: Cannot read properties of undefined (reading 'email')
+2023-12-05T15:05:54.944Z [logs] error: Error en PasswordService/resetPassword: ReferenceError: password2 is not defined
+2023-12-05T16:59:04.725Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: next is not defined
+2023-12-05T17:00:38.381Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: next is not defined
+2023-12-05T17:07:02.893Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'pid')
+2023-12-05T17:07:48.861Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{ _id: { pid: undefined, uid: undefined } }" (type Object) at path "_id" for model "products"
+2023-12-05T17:07:48.863Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:08:59.217Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{ _id: { pid: undefined, uid: undefined } }" (type Object) at path "_id" for model "products"
+2023-12-05T17:08:59.219Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:10:12.779Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{ _id: { pid: undefined, uid: undefined } }" (type Object) at path "_id" for model "products"
+2023-12-05T17:10:12.782Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:13:44.385Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{
+  _id: { pid: '656f56afb2c1ce44fc3b6d3c', uid: '656e5b70a957e51f125d6364' }
+}" (type Object) at path "_id" for model "products"
+2023-12-05T17:13:44.387Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:17:39.918Z [logs] error: Error en ProductsService/deletProductviaService: CastError: Cast to ObjectId failed for value "{
+  _id: { pid: '656f56afb2c1ce44fc3b6d3c', uid: '656e5b70a957e51f125d6364' }
+}" (type Object) at path "_id" for model "products"
+2023-12-05T17:17:39.919Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:19:31.236Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:21:36.543Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: isUserAuthorized is not defined
+2023-12-05T17:22:26.585Z [logs] error: Error en ProductManager/deleteProduct: TypeError: next is not a function
+2023-12-05T17:23:36.581Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: next is not defined
+2023-12-05T17:34:50.029Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:35:48.959Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:56:28.664Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:57:49.349Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T17:59:18.331Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T18:03:01.781Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'status')
+2023-12-05T18:37:20.045Z [logs] error: error
+2023-12-09T19:28:52.313Z [logs] error: error
+2023-12-09T19:48:17.185Z [logs] error: Error en ProductsService/getProductbyIDviaService: ReferenceError: found is not defined
+2023-12-09T19:48:28.674Z [logs] error: Error en ProductsService/getProductbyIDviaService: ReferenceError: found is not defined
+2023-12-09T19:48:30.293Z [logs] error: Error en ProductsService/getProductbyIDviaService: ReferenceError: found is not defined
+2023-12-09T19:50:43.650Z [logs] error: Error en ProductsService/getProductbyIDviaService: ReferenceError: found is not defined
+2023-12-09T19:56:58.781Z [logs] error: Error en UseressService/changeRol: CastError: Cast to ObjectId failed for value "0" (type number) at path "_id" for model "users"
+2023-12-09T19:56:58.783Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:07:06.115Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:07:06.116Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:07:50.725Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:07:50.726Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:21:20.135Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:21:20.136Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:22:24.856Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:22:24.857Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:22:42.232Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:22:42.233Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:23:00.388Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:23:00.389Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:23:23.610Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:23:23.611Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:25:06.869Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:25:06.870Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:27:56.506Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:27:56.507Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:28:22.422Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:28:22.422Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:29:21.236Z [logs] error: Error en ProductManager/deleteProduct: TypeError: Cannot read properties of undefined (reading 'uid')
+2023-12-09T20:29:46.823Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:29:46.824Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:30:03.097Z [logs] error: Error en UseressService/changeRol: CastError: Cast to ObjectId failed for value "<ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    ended: true,
+    endEmitted: false,
+    reading: false,
+    constructed: true,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: true,
+    dataEmitted: false,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1127,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1127,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      writeHead: [Function: writeHead],
+      end: [Function: end],
+      flush: [Function: flush],
+      write: [Function: write],
+      on: [Function: on],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 956,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: true,
+  rawHeaders: [
+    'accept-encoding',
+    'gzip, deflate, br',
+    'cookie',
+    'connect.sid=s%3AAgrkqaArGHJ2vd9z64LJAQTSQi-6iTGB.7J7BZIJK9aYy2nHDMFZzG9vSURB2%2FTgetYRsEF5f1wQ',
+    'Accept',
+    '*/*',
+    'User-Agent',
+    'Thunder Client (https://www.thunderclient.com)',
+    'Host',
+    'localhost:8080',
+    'Connection',
+    'close'
+  ],
+  rawTrailers: [],
+  joinDuplicateHeaders: undefined,
+  aborted: false,
+  upgrade: false,
+  url: '/6574c681eb63c4618a16a666',
+  method: 'DELETE',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1127,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 1127,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      writeHead: [Function: writeHead],
+      end: [Function: end],
+      flush: [Function: flush],
+      write: [Function: write],
+      on: [Function: on],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 956,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/api/products',
+  originalUrl: '/api/products/6574c681eb63c4618a16a666',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/6574c681eb63c4618a16a666',
+    path: '/6574c681eb63c4618a16a666',
+    href: '/6574c681eb63c4618a16a666',
+    _raw: '/6574c681eb63c4618a16a666'
+  },
+  params: { pid: '6574c681eb63c4618a16a666' },
+  query: {},
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 956,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: false,
+      [Symbol(kSetKeepAliveInitialDelay)]: 0,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    _maxRequestsPerSocket: 0,
+    locals: [Object: null prototype] {},
+    writeHead: [Function: writeHead],
+    end: [Function: end],
+    flush: [Function: flush],
+    write: [Function: write],
+    on: [Function: on],
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] { 'x-powered-by': [Array] },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  body: {},
+  secret: undefined,
+  cookies: {
+    'connect.sid': 's:AgrkqaArGHJ2vd9z64LJAQTSQi-6iTGB.7J7BZIJK9aYy2nHDMFZzG9vSURB2/TgetYRsEF5f1wQ'
+  },
+  signedCookies: [Object: null prototype] {},
+  _parsedOriginalUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: null,
+    query: null,
+    pathname: '/api/products/6574c681eb63c4618a16a666',
+    path: '/api/products/6574c681eb63c4618a16a666',
+    href: '/api/products/6574c681eb63c4618a16a666',
+    _raw: '/api/products/6574c681eb63c4618a16a666'
+  },
+  sessionStore: MongoStore {
+    _events: [Object: null prototype] {
+      disconnect: [Function: ondisconnect],
+      connect: [Function: onconnect]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    crypto: null,
+    transformFunctions: {
+      serialize: [Function: stringify],
+      unserialize: [Function: parse]
+    },
+    clientP: Promise { [MongoClient] },
+    options: {
+      collectionName: 'sessions',
+      ttl: 999999999999,
+      mongoOptions: {},
+      autoRemove: 'native',
+      autoRemoveInterval: 10,
+      touchAfter: 0,
+      stringify: true,
+      crypto: [Object],
+      mongoUrl: 'mongodb+srv://albertsleyther:09NbqGe9gecOLTBy@ecommerce.6lrddnh.mongodb.net/?retryWrites=true&w=majority'
+    },
+    collectionP: Promise { [Collection] },
+    generate: [Function (anonymous)],
+    [Symbol(kCapture)]: false
+  },
+  sessionID: '_eUQXh3Br0XwJlX3Sp5raFvvbl09OFaU',
+  session: Session {
+    cookie: { path: '/', _expires: null, originalMaxAge: null, httpOnly: true }
+  },
+  logIn: [Function (anonymous)],
+  login: [Function (anonymous)],
+  logOut: [Function (anonymous)],
+  logout: [Function (anonymous)],
+  isAuthenticated: [Function (anonymous)],
+  isUnauthenticated: [Function (anonymous)],
+  _sessionManager: SessionManager {
+    _key: 'passport',
+    _serializeUser: [Function: bound ]
+  },
+  _passport: {
+    instance: Authenticator {
+      _key: 'passport',
+      _strategies: [Object],
+      _serializers: [Array],
+      _deserializers: [Array],
+      _infoTransformers: [],
+      _framework: [Object],
+      _sm: [SessionManager],
+      Authenticator: [Function: Authenticator],
+      Passport: [Function: Authenticator],
+      Strategy: [Function],
+      strategies: [Object],
+      _userProperty: 'user'
+    }
+  },
+  route: Route {
+    path: '/:pid',
+    stack: [ [Layer] ],
+    methods: { delete: true }
+  },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    'accept-encoding': 'gzip, deflate, br',
+    cookie: 'connect.sid=s%3AAgrkqaArGHJ2vd9z64LJAQTSQi-6iTGB.7J7BZIJK9aYy2nHDMFZzG9vSURB2%2FTgetYRsEF5f1wQ',
+    accept: '*/*',
+    'user-agent': 'Thunder Client (https://www.thunderclient.com)',
+    host: 'localhost:8080',
+    connection: 'close'
+  },
+  [Symbol(kHeadersCount)]: 12,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0
+}" (type IncomingMessage) at path "_id" for model "users"
+2023-12-09T20:30:03.127Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:31:28.772Z [logs] error: Error en UseressService/changeRol: CastError: Cast to ObjectId failed for value "<ref *2> IncomingMessage {
+  _readableState: ReadableState {
+    objectMode: false,
+    highWaterMark: 16384,
+    buffer: BufferList { head: null, tail: null, length: 0 },
+    length: 0,
+    pipes: [],
+    flowing: null,
+    ended: true,
+    endEmitted: false,
+    reading: false,
+    constructed: true,
+    sync: true,
+    needReadable: false,
+    emittedReadable: false,
+    readableListening: false,
+    resumeScheduled: false,
+    errorEmitted: false,
+    emitClose: true,
+    autoDestroy: true,
+    destroyed: false,
+    errored: null,
+    closed: false,
+    closeEmitted: false,
+    defaultEncoding: 'utf8',
+    awaitDrainWriters: null,
+    multiAwaitDrain: false,
+    readingMore: true,
+    dataEmitted: false,
+    decoder: null,
+    encoding: null,
+    [Symbol(kPaused)]: null
+  },
+  _events: [Object: null prototype] {},
+  _eventsCount: 0,
+  _maxListeners: undefined,
+  socket: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 61143,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 61143,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      writeHead: [Function: writeHead],
+      end: [Function: end],
+      flush: [Function: flush],
+      write: [Function: write],
+      on: [Function: on],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 1440,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  httpVersionMajor: 1,
+  httpVersionMinor: 1,
+  httpVersion: '1.1',
+  complete: true,
+  rawHeaders: [
+    'accept-encoding',
+    'gzip, deflate, br',
+    'cookie',
+    'connect.sid=s%3AAgrkqaArGHJ2vd9z64LJAQTSQi-6iTGB.7J7BZIJK9aYy2nHDMFZzG9vSURB2%2FTgetYRsEF5f1wQ',
+    'Accept',
+    '*/*',
+    'User-Agent',
+    'Thunder Client (https://www.thunderclient.com)',
+    'Host',
+    'localhost:8080',
+    'Connection',
+    'close'
+  ],
+  rawTrailers: [],
+  joinDuplicateHeaders: undefined,
+  aborted: false,
+  upgrade: false,
+  url: '/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364',
+  method: 'DELETE',
+  statusCode: null,
+  statusMessage: null,
+  client: <ref *1> Socket {
+    connecting: false,
+    _hadError: false,
+    _parent: null,
+    _host: null,
+    _closeAfterHandlingError: false,
+    _readableState: ReadableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      buffer: BufferList { head: null, tail: null, length: 0 },
+      length: 0,
+      pipes: [],
+      flowing: true,
+      ended: false,
+      endEmitted: false,
+      reading: true,
+      constructed: true,
+      sync: false,
+      needReadable: true,
+      emittedReadable: false,
+      readableListening: false,
+      resumeScheduled: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      destroyed: false,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      defaultEncoding: 'utf8',
+      awaitDrainWriters: null,
+      multiAwaitDrain: false,
+      readingMore: false,
+      dataEmitted: false,
+      decoder: null,
+      encoding: null,
+      [Symbol(kPaused)]: false
+    },
+    _events: [Object: null prototype] {
+      end: [Array],
+      timeout: [Function: socketOnTimeout],
+      data: [Function: bound socketOnData],
+      error: [Function: socketOnError],
+      close: [Array],
+      drain: [Function: bound socketOnDrain],
+      resume: [Function: onSocketResume],
+      pause: [Function: onSocketPause]
+    },
+    _eventsCount: 8,
+    _maxListeners: undefined,
+    _writableState: WritableState {
+      objectMode: false,
+      highWaterMark: 16384,
+      finalCalled: false,
+      needDrain: false,
+      ending: false,
+      ended: false,
+      finished: false,
+      destroyed: false,
+      decodeStrings: false,
+      defaultEncoding: 'utf8',
+      length: 0,
+      writing: false,
+      corked: 0,
+      sync: true,
+      bufferProcessing: false,
+      onwrite: [Function: bound onwrite],
+      writecb: null,
+      writelen: 0,
+      afterWriteTickInfo: null,
+      buffered: [],
+      bufferedIndex: 0,
+      allBuffers: true,
+      allNoop: true,
+      pendingcb: 0,
+      constructed: true,
+      prefinished: false,
+      errorEmitted: false,
+      emitClose: false,
+      autoDestroy: true,
+      errored: null,
+      closed: false,
+      closeEmitted: false,
+      [Symbol(kOnFinished)]: []
+    },
+    allowHalfOpen: true,
+    _sockname: null,
+    _pendingData: null,
+    _pendingEncoding: '',
+    server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 61143,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    _server: Server {
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      requestTimeout: 300000,
+      headersTimeout: 60000,
+      keepAliveTimeout: 5000,
+      connectionsCheckingInterval: 30000,
+      requireHostHeader: true,
+      joinDuplicateHeaders: undefined,
+      rejectNonStandardBodyWrites: false,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      _maxListeners: undefined,
+      _connections: 1,
+      _handle: [TCP],
+      _usingWorkers: false,
+      _workers: [],
+      _unref: false,
+      allowHalfOpen: true,
+      pauseOnConnect: false,
+      noDelay: true,
+      keepAlive: false,
+      keepAliveInitialDelay: 0,
+      highWaterMark: 16384,
+      httpAllowHalfOpen: false,
+      timeout: 0,
+      maxHeadersCount: null,
+      maxRequestsPerSocket: 0,
+      _connectionKey: '6::::8080',
+      [Symbol(IncomingMessage)]: [Function: IncomingMessage],
+      [Symbol(ServerResponse)]: [Function: ServerResponse],
+      [Symbol(kCapture)]: false,
+      [Symbol(async_id_symbol)]: 598,
+      [Symbol(http.server.connections)]: ConnectionsList {},
+      [Symbol(http.server.connectionsCheckingInterval)]: Timeout {
+        _idleTimeout: 30000,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 61143,
+        _onTimeout: [Function: bound checkConnections],
+        _timerArgs: undefined,
+        _repeat: 30000,
+        _destroyed: false,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 597,
+        [Symbol(triggerId)]: 0
+      },
+      [Symbol(kUniqueHeaders)]: null
+    },
+    parser: HTTPParser {
+      '0': null,
+      '1': [Function: parserOnHeaders],
+      '2': [Function: parserOnHeadersComplete],
+      '3': [Function: parserOnBody],
+      '4': [Function: parserOnMessageComplete],
+      '5': [Function: bound onParserExecute],
+      '6': [Function: bound onParserTimeout],
+      _headers: [],
+      _url: '',
+      socket: [Circular *1],
+      incoming: [Circular *2],
+      outgoing: null,
+      maxHeaderPairs: 2000,
+      _consumed: true,
+      onIncoming: [Function: bound parserOnIncoming],
+      [Symbol(resource_symbol)]: [HTTPServerAsyncResource]
+    },
+    on: [Function: socketListenerWrap],
+    addListener: [Function: socketListenerWrap],
+    prependListener: [Function: socketListenerWrap],
+    setEncoding: [Function: socketSetEncoding],
+    _paused: false,
+    _httpMessage: ServerResponse {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: false,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: true,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: null,
+      _hasBody: true,
+      _trailer: '',
+      finished: false,
+      _headerSent: false,
+      _closed: false,
+      socket: [Circular *1],
+      _header: null,
+      _keepAliveTimeout: 5000,
+      _onPendingData: [Function: bound updateOutgoingData],
+      req: [Circular *2],
+      _sent100: false,
+      _expect_continue: false,
+      _maxRequestsPerSocket: 0,
+      locals: [Object: null prototype] {},
+      writeHead: [Function: writeHead],
+      end: [Function: end],
+      flush: [Function: flush],
+      write: [Function: write],
+      on: [Function: on],
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 16384,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    [Symbol(async_id_symbol)]: 1440,
+    [Symbol(kHandle)]: TCP {
+      reading: true,
+      onconnection: null,
+      _consumed: true,
+      [Symbol(owner_symbol)]: [Circular *1]
+    },
+    [Symbol(lastWriteQueueSize)]: 0,
+    [Symbol(timeout)]: null,
+    [Symbol(kBuffer)]: null,
+    [Symbol(kBufferCb)]: null,
+    [Symbol(kBufferGen)]: null,
+    [Symbol(kCapture)]: false,
+    [Symbol(kSetNoDelay)]: true,
+    [Symbol(kSetKeepAlive)]: false,
+    [Symbol(kSetKeepAliveInitialDelay)]: 0,
+    [Symbol(kBytesRead)]: 0,
+    [Symbol(kBytesWritten)]: 0
+  },
+  _consuming: false,
+  _dumped: false,
+  next: [Function: next],
+  baseUrl: '/api/products',
+  originalUrl: '/api/products/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364',
+  _parsedUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: '?uid=656e5b70a957e51f125d6364',
+    query: 'uid=656e5b70a957e51f125d6364',
+    pathname: '/6574c681eb63c4618a16a666',
+    path: '/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364',
+    href: '/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364',
+    _raw: '/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364'
+  },
+  params: { pid: '6574c681eb63c4618a16a666' },
+  query: { uid: '656e5b70a957e51f125d6364' },
+  res: <ref *3> ServerResponse {
+    _events: [Object: null prototype] { finish: [Function: bound resOnFinish] },
+    _eventsCount: 1,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    destroyed: false,
+    _last: false,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    maxRequestsOnConnectionReached: false,
+    _defaultKeepAlive: true,
+    useChunkedEncodingByDefault: true,
+    sendDate: true,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    strictContentLength: false,
+    _contentLength: null,
+    _hasBody: true,
+    _trailer: '',
+    finished: false,
+    _headerSent: false,
+    _closed: false,
+    socket: <ref *1> Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: null,
+      _closeAfterHandlingError: false,
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 8,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: [Server],
+      _server: [Server],
+      parser: [HTTPParser],
+      on: [Function: socketListenerWrap],
+      addListener: [Function: socketListenerWrap],
+      prependListener: [Function: socketListenerWrap],
+      setEncoding: [Function: socketSetEncoding],
+      _paused: false,
+      _httpMessage: [Circular *3],
+      [Symbol(async_id_symbol)]: 1440,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(kSetKeepAlive)]: false,
+      [Symbol(kSetKeepAliveInitialDelay)]: 0,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    _header: null,
+    _keepAliveTimeout: 5000,
+    _onPendingData: [Function: bound updateOutgoingData],
+    req: [Circular *2],
+    _sent100: false,
+    _expect_continue: false,
+    _maxRequestsPerSocket: 0,
+    locals: [Object: null prototype] {},
+    writeHead: [Function: writeHead],
+    end: [Function: end],
+    flush: [Function: flush],
+    write: [Function: write],
+    on: [Function: on],
+    [Symbol(kCapture)]: false,
+    [Symbol(kBytesWritten)]: 0,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] { 'x-powered-by': [Array] },
+    [Symbol(errored)]: null,
+    [Symbol(kHighWaterMark)]: 16384,
+    [Symbol(kRejectNonStandardBodyWrites)]: false,
+    [Symbol(kUniqueHeaders)]: null
+  },
+  body: {},
+  secret: undefined,
+  cookies: {
+    'connect.sid': 's:AgrkqaArGHJ2vd9z64LJAQTSQi-6iTGB.7J7BZIJK9aYy2nHDMFZzG9vSURB2/TgetYRsEF5f1wQ'
+  },
+  signedCookies: [Object: null prototype] {},
+  _parsedOriginalUrl: Url {
+    protocol: null,
+    slashes: null,
+    auth: null,
+    host: null,
+    port: null,
+    hostname: null,
+    hash: null,
+    search: '?uid=656e5b70a957e51f125d6364',
+    query: 'uid=656e5b70a957e51f125d6364',
+    pathname: '/api/products/6574c681eb63c4618a16a666',
+    path: '/api/products/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364',
+    href: '/api/products/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364',
+    _raw: '/api/products/6574c681eb63c4618a16a666?uid=656e5b70a957e51f125d6364'
+  },
+  sessionStore: MongoStore {
+    _events: [Object: null prototype] {
+      disconnect: [Function: ondisconnect],
+      connect: [Function: onconnect]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    crypto: null,
+    transformFunctions: {
+      serialize: [Function: stringify],
+      unserialize: [Function: parse]
+    },
+    clientP: Promise { [MongoClient] },
+    options: {
+      collectionName: 'sessions',
+      ttl: 999999999999,
+      mongoOptions: {},
+      autoRemove: 'native',
+      autoRemoveInterval: 10,
+      touchAfter: 0,
+      stringify: true,
+      crypto: [Object],
+      mongoUrl: 'mongodb+srv://albertsleyther:09NbqGe9gecOLTBy@ecommerce.6lrddnh.mongodb.net/?retryWrites=true&w=majority'
+    },
+    collectionP: Promise { [Collection] },
+    generate: [Function (anonymous)],
+    [Symbol(kCapture)]: false
+  },
+  sessionID: '77bF7VfvgeKkUgaCZs1Z8elTHV20UdHc',
+  session: Session {
+    cookie: { path: '/', _expires: null, originalMaxAge: null, httpOnly: true }
+  },
+  logIn: [Function (anonymous)],
+  login: [Function (anonymous)],
+  logOut: [Function (anonymous)],
+  logout: [Function (anonymous)],
+  isAuthenticated: [Function (anonymous)],
+  isUnauthenticated: [Function (anonymous)],
+  _sessionManager: SessionManager {
+    _key: 'passport',
+    _serializeUser: [Function: bound ]
+  },
+  _passport: {
+    instance: Authenticator {
+      _key: 'passport',
+      _strategies: [Object],
+      _serializers: [Array],
+      _deserializers: [Array],
+      _infoTransformers: [],
+      _framework: [Object],
+      _sm: [SessionManager],
+      Authenticator: [Function: Authenticator],
+      Passport: [Function: Authenticator],
+      Strategy: [Function],
+      strategies: [Object],
+      _userProperty: 'user'
+    }
+  },
+  route: Route {
+    path: '/:pid',
+    stack: [ [Layer] ],
+    methods: { delete: true }
+  },
+  [Symbol(kCapture)]: false,
+  [Symbol(kHeaders)]: {
+    'accept-encoding': 'gzip, deflate, br',
+    cookie: 'connect.sid=s%3AAgrkqaArGHJ2vd9z64LJAQTSQi-6iTGB.7J7BZIJK9aYy2nHDMFZzG9vSURB2%2FTgetYRsEF5f1wQ',
+    accept: '*/*',
+    'user-agent': 'Thunder Client (https://www.thunderclient.com)',
+    host: 'localhost:8080',
+    connection: 'close'
+  },
+  [Symbol(kHeadersCount)]: 12,
+  [Symbol(kTrailers)]: null,
+  [Symbol(kTrailersCount)]: 0
+}" (type IncomingMessage) at path "_id" for model "users"
+2023-12-09T20:31:28.807Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:31:53.851Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-09T20:31:53.852Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-09T20:56:17.293Z [logs] error: Error en CartManager/getProductsinCartById: TypeError: res.status.send is not a function
+2023-12-09T20:56:52.189Z [logs] error: Error en CartManager/getProductsinCartById: TypeError: res.status.send is not a function
+2023-12-09T21:30:02.434Z [logs] error: error
+2023-12-09T21:44:26.092Z [logs] error: error
+2023-12-09T21:44:44.376Z [logs] error: error
+2023-12-09T21:45:52.290Z [logs] error: error
+2023-12-09T21:46:03.120Z [logs] error: error
+2023-12-09T21:46:10.580Z [logs] error: error
+2023-12-09T21:57:49.937Z [logs] error: error
+2023-12-09T22:06:48.704Z [logs] error: error
+2023-12-09T22:06:50.207Z [logs] error: error
+2023-12-09T22:06:51.327Z [logs] error: error
+2023-12-09T22:12:26.023Z [logs] error: Error en CartService/updateProductQuantityviaService: ReferenceError: CartById is not defined
+2023-12-09T22:13:13.415Z [logs] error: error
+2023-12-09T22:17:14.684Z [logs] error: error
+2023-12-09T22:22:34.169Z [logs] error: error
+2023-12-09T22:26:16.180Z [logs] error: error
+2023-12-09T22:27:04.159Z [logs] error: error
+2023-12-09T22:27:23.714Z [logs] error: error
+2023-12-10T01:18:48.755Z [logs] error: Error en ProductsService/getProductbyIDviaService: CastError: Cast to ObjectId failed for value "{ _id: '{pid}' }" (type Object) at path "_id" for model "products"
+2023-12-10T01:22:16.034Z [logs] error: Error en ProductsService/getProductbyIDviaService: ReferenceError: log is not defined
+2023-12-10T01:22:50.194Z [logs] error: Error en ProductsService/getProductbyIDviaService: CastError: Cast to ObjectId failed for value "{ _id: '{pid}' }" (type Object) at path "_id" for model "products"
+2023-12-10T01:27:35.493Z [logs] error: Error en ProductsService/getProductbyIDviaService: CastError: Cast to ObjectId failed for value "{ _id: '{pid}' }" (type Object) at path "_id" for model "products"
+2023-12-10T03:26:51.219Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:26:51.220Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T03:29:53.907Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:29:53.908Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T03:31:20.546Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:31:20.548Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T03:37:22.694Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:37:22.695Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T03:40:33.050Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:40:33.051Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T03:42:27.956Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:42:27.958Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T03:43:30.157Z [logs] error: Error en UseressService/changeRol: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T03:43:30.158Z [logs] error: Error en ProductManager/deleteProduct: ReferenceError: Cannot access 'arrayAnswer' before initialization
+2023-12-10T13:30:39.668Z [logs] error: error
+2023-12-10T13:59:48.027Z [logs] error: error
+2023-12-10T14:12:26.208Z [logs] error: error
+2023-12-10T14:12:29.239Z [logs] error: error
+2023-12-10T14:12:40.736Z [logs] error: error
+2023-12-10T14:34:39.321Z [logs] error: error
+2023-12-10T19:48:37.629Z [logs] error: Error en ProductsService/updateProductviaService: CastError: Cast to Number failed for value "NaN" (type number) at path "price"
+2023-12-10T19:54:21.542Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-10T19:56:02.852Z [logs] error: Error en ProductsService/updateProductviaService: CastError: Cast to Number failed for value "NaN" (type number) at path "price"
+2023-12-10T19:59:48.679Z [logs] error: Error en ProductsService/updateProductviaService: CastError: Cast to Number failed for value "NaN" (type number) at path "price"
+2023-12-10T20:03:13.594Z [logs] error: Error en ProductsService/updateProductviaService: CastError: Cast to Number failed for value "NaN" (type number) at path "price"
+2023-12-10T20:06:01.743Z [logs] error: Error en ProductsService/updateProductviaService: CastError: Cast to Number failed for value "NaN" (type number) at path "price"
+2023-12-10T21:15:20.608Z [logs] error: Error en CartService/addCartProductsviaService: ReferenceError: userModel is not defined
+2023-12-10T21:17:30.188Z [logs] error: Error en CartService/addCartProductsviaService: ReferenceError: userModel is not defined
+2023-12-10T21:19:50.177Z [logs] error: Error en CartService/addCartProductsviaService: ReferenceError: userModel is not defined
+2023-12-10T21:20:45.450Z [logs] error: Error en CartService/addCartProductsviaService: ReferenceError: userModel is not defined
+2023-12-10T21:21:08.090Z [logs] error: Error en CartService/addCartProductsviaService: ReferenceError: userModel is not defined
+2023-12-10T21:22:32.675Z [logs] error: Error en CartService/addCartProductsviaService: ReferenceError: userModel is not defined
+2023-12-10T21:34:11.739Z [logs] error: Error en CartService/addCartProductsviaService: CastError: Cast to ObjectId failed for value "" (type string) at path "_id" for model "users"
+2023-12-10T21:43:08.584Z [logs] error: Error en CartService/addCartProductsviaService: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T21:44:36.311Z [logs] error: Error en ProductsService/getProductWpaginviaService: MongooseError: Operation `products.countDocuments()` buffering timed out after 10000ms
+2023-12-10T21:46:43.674Z [logs] error: Error en CartService/addCartProductsviaService: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T21:51:20.551Z [logs] error: Error en CartService/addCartProductsviaService: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T21:55:13.151Z [logs] error: Error en CartService/addCartProductsviaService: TypeError: Cannot read properties of undefined (reading 'role')
+2023-12-10T22:05:46.026Z [logs] error: Error en ProductsService/updateProductviaService: TypeError: Cannot destructure property 'title' of 'product' as it is undefined.
+2023-12-10T22:10:51.699Z [logs] error: Error en ProductsService/updateProductviaService: TypeError: Cannot destructure property 'title' of 'product' as it is undefined.
+2023-12-10T22:15:15.833Z [logs] error: Error en ProductsService/updateProductviaService: TypeError: Cannot destructure property 'title' of 'product' as it is undefined.

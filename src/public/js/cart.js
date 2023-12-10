@@ -16,19 +16,6 @@ async function obtainPersonalCart(cid) {
        await updateProductCatalogList(products);
     });
 
-    // const value = buttongetCart.value;
-    // console.log(value)
-
-    // buttongetCart.addEventListener("click", (evt) => {
-    //     evt.preventDefault()
-    //     let pid = catalogo.id;
-    //     const cartid = document.getElementById('cartid').innerHTML;
-
-    //     socket.emit('addNewProducttoCart', {
-    //         pid, cartid,
-    //     })
-    // });
-
 }
 
 // Función para actualizar la lista de productos disponibles en el carrito en mi página web
@@ -36,7 +23,7 @@ async function updateProductCatalogList(products) {
     const catalogDiv = document.getElementById("catalogo");
     let contenidocambiante = ""
 
-console.log(products)
+
     products.docs[0].products.id.forEach(({ thumbnail, price, description, _id, code, stock, status, category, title }) => {
         contenidocambiante += `<div class="form-container">
             <div>

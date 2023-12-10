@@ -1,32 +1,37 @@
 import express, { Router, json } from "express"
-import { uploader } from '../middlewares/multer.js'
-import  {generateProduct}  from "../services/mock.Service.js"
+import { logger } from "../utils/logger.js"
 import {
-    getProducts,
-    addProduct,
     getProducts_,
-    getProductById,
-    updateProduct,
-    deleteProduct,
-  
-  }from '../dao/Mongo/ProductManager.js'
+} from '../dao/Mongo/ProductManager.js'
 import {
     getProductsinCartById
-  } from "../dao/Mongo/CartManager.js";
+} from "../dao/Mongo/CartManager.js";
 import publicRoutes from "../middlewares/publicRoutes.js"
 import privateRoutes from "../middlewares/privateRoutes.js"
 import permissionsRoutes from "../middlewares/adminpermissionsRoutes.js"
 
-// const productManager = new ProductManager();
-// const cartManager = new CartManager()
 const router = express.Router()
 
 router.get("/realTimeProducts", privateRoutes, permissionsRoutes, async (req, res) => {
+
+    var email = req.session.user.email
+    var id = req.session.user.id
     res.render("realTimeProducts", {
         title: "Real Time Products",
-        style: "home.css"
+        style: "home.css",
+        email, id
     })
 })
+
+router.get('/loggerTest',
+    async (req, res) => {
+        logger.debug("prueba de debug")
+        logger.error("prueba de error")
+        logger.http("prueba de http")
+        logger.info("prueba de info")
+        logger.warn("prueba de warning")
+        res.send('prueba exitosa');
+    });
 
 router.get("/home", async (req, res) => {
 
@@ -41,7 +46,7 @@ router.get("/home", async (req, res) => {
 })
 
 router.get("/PersonalCart", async (req, res) => {
-    console.log("entro en el personal cart de viewsrouter")
+
     const cid = req.session.user.cart;
 
     res.render("cart", {
@@ -53,51 +58,54 @@ router.get("/PersonalCart", async (req, res) => {
 })
 
 router.get("/PersonalCartStatic", async (req, res) => {
-    console.log("entro en el personal cart de views.router")
+
     const cid = req.session.user.cart;
-    // console.log("cid : " + cid )
-
     const allProducts = await getProductsinCartById(cid)
-
-    // console.log(allProducts)
 
     res.render("cartStatic", {
         title: "Personal Shooping Cart",
         style: "catalog.css",
-        cid: allProducts
-    })
+        cid:  cid,
+        allProducts: allProducts,
+    }) 
 })
 
 router.get("/products", privateRoutes, async (req, res) => {
 
     let user = {
-
         firstname: req.session.user.firstname,
         lastname: req.session.user.lastname,
         age: req.session.user.age,
         email_: req.session.user.email,
         cart: req.session.user.cart,
         role: req.session.user.role,
+        id: req.session.user.id,
     }
+
     const firstname = req.session.user.firstname;
     const lastname = req.session.user.lastname;
     const age = req.session.user.age;
     const email_ = req.session.user.email;
     const cart = req.session.user.cart;
     const role = req.session.user.role;
-    const swAdmin = role === 'Admin' ? true : false;
-    const swUser = role === 'User' ? true : false;
+    const uid = req.session.user.id;
+    const swAdmin = role === 'Admin' || role === 'admin' ? true : false;
+    const swUser = role === 'User' || role === 'user' ? true : false;
+    const swPremium = role === 'Premium' || role === 'premium' ? true : false;
 
     res.render("catalog", {
         title: "Catalog",
         style: "catalog.css",
-        firstname, lastname, age, email_, role, swAdmin, swUser, cart, user,
+        firstname, lastname, age, email_, role, swAdmin, swUser, cart, user, swPremium, uid
     })
 })
 
 router.get("/carts/:cid", async (req, res) => {
 
     const cid = req.params.cid
+    console.log(cid)
+    console.log(typeof cid)
+
     const allProducts = await getProductsinCartById(cid)
     const isString = (value) => typeof value === 'string';
     if (isString(allProducts)) {
@@ -111,14 +119,24 @@ router.get("/carts/:cid", async (req, res) => {
     res.render("cart", {
         title: "Cart Products",
         style: "home.css",
-        Products: allProducts
+        Products: allProducts, cid
     })
 })
 
 router.get('/login', publicRoutes, (req, res) => {
+
+
     res.render("login", {
         title: "Login Form",
         style: "login.css"
+    })
+});
+
+router.get('/recoverSendEmail', publicRoutes, (req, res) => {
+
+    res.render("passwordRecovSendMail", {
+        title: "Recover Form",
+        style: "recover.css"
     })
 });
 
@@ -179,20 +197,16 @@ router.get('/failogin', publicRoutes, (req, res) => {
     })
 });
 
+router.post('/generalFailform', (req, res) => {
+ 
+    var { message } = req.body
 
-router.get('/mockingproducts', (req, res) => {
-
-    let mockProducts = []
-    for (let i = 0; i < 100; i++) {
-        mockProducts.push(generateProduct())
-    }
-    res.send(
-        {status:"success",
-        message: "Products",
-        payload: mockProducts}
-    )
+    res.render("generalFailform", {
+        title: "General FailForm",
+        style: "failLogin.css",
+        message
+    })
 });
-
 
 
 function ManageAnswer(answer) {

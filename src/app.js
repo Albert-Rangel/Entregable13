@@ -3,7 +3,6 @@ import handlebars from "express-handlebars"
 import { Server } from 'socket.io'
 import __dirname from './utils.js'
 import ProductRoutes from './router/productMongo.routes.js'
-// import CartManager from './dao/Mongo/CartManager.js'
 import {
   addCartProducts,
   getProductsinCartByIdPagination,
@@ -12,15 +11,16 @@ import {
   getProducts,
   addProduct,
   deleteProduct,
+  updateProduct
 } from "./dao/Mongo/ProductManager.js";
 import ChatsRoutes from './router/chat.routes.js'
 import MockRoutes from './router/mock.routes.js'
+import PasswordRoutes from './router/password.routes.js'
 import CartRoutes from './router/cartMongo.routes.js'
 import EmailsRoutes from './router/email.routes.js'
-import errorHandler from './middlewares/errors/index.js'
-// import ProductManager from './dao/Mongo/ProductManager.js'
 import compression from "express-compression"
 import ViewsRouter from './router/views.routes.js'
+import UserRouter from './router/user.routes.js'
 import SessionRouter from './router/session.router.js'
 import passport from "passport"
 import initiaizePassport from "./config/passport.config.js"
@@ -28,16 +28,15 @@ import MongoStore from "connect-mongo"
 import session from "express-session"
 import mongoose from "mongoose"
 import cookieParser from "cookie-parser"
+import dotenv from "dotenv"
 import config from "./config/env.config.js"
-
-// const productManager = new ProductManager();
-// const cartManager = new CartManager();
+import swaggerJSDoc from "swagger-jsdoc"
+import swaggerUiExpress from "swagger-ui-express"
+import { errors } from "./middlewares/error.js"
 
 const app = express()
-// const program = new Command();
-// const fileStore = FileStore(session)
-
 const port = config.port;
+dotenv.config()
 
 //Creacion del servidorHTTP
 const HTTPserver = app.listen(port, () =>
@@ -57,7 +56,6 @@ connectToMongoose().then(() => {
   console.log(`Connected to Mongoose`)
 });
 
-
 //Creacion del servidor con Socketio
 const Socketserverio = new Server(HTTPserver)
 
@@ -66,14 +64,12 @@ Socketserverio.on('connection', async (socket) => {
 
   console.log(`client connected with id ${socket.id}`)
 
-  const productList = await getProducts({limit : 20,page: 1, sort : null,query :null});
-
+  const productList = await getProducts({ limit: 20, page: 1, sort: null, query: null });
   Socketserverio.emit('AllProducts', productList)
 
   Socketserverio.emit('AllProductsCart', productList)
 
   socket.on('sendNewProduct', async (newP) => {
-
     const newProduct = {
       description: newP.description,
       title: newP.title,
@@ -84,18 +80,38 @@ Socketserverio.on('connection', async (socket) => {
       status: newP.status,
       category: newP.category,
       swWeb: true,
-
+      owner: newP.owner,
     }
+
     await addProduct(newProduct);
-
-    const productList = await getProducts({limit : 20,page: 1, sort : null,query :null});
-
+    const productList = await getProducts({ limit: 50, page: 1, sort: null, query: null });
     Socketserverio.emit('AllProducts', productList)
   })
 
-  socket.on('functionDeleteProduct', async (idp) => {
-    await deleteProduct(idp);
-    const productList = await getProducts({limit : 20,page: 1, sort : null,query :null});
+  socket.on('updateProduct', async ({ pid, data }) => {
+
+    const newProduct = {
+      description: !data.description ? undefined : data.description,
+      title: !data.title ? undefined : data.title,
+      // price: parseInt(data.price, 10) == NaN? null:parseInt(data.price, 10),
+      price: !data.price ? undefined : data.price,
+      thumbnail: !data.thumbnail ? undefined : data.thumbnail,
+      code: !data.code ? undefined : data.code,
+      // stock: parseInt(data.stock, 10)== NaN? null:parseInt(data.stock, 10),
+      stock: !data.stock ? undefined : data.stock,
+      status: !data.status ? undefined : data.status,
+      category: !data.category ? undefined : data.category,
+      swWeb: true,
+      owner: !data.owner ? undefined : data.owner,
+    }
+    await updateProduct({ pid, newProduct });
+    const productList = await getProducts({ limit: 50, page: 1, sort: null, query: null });
+    Socketserverio.emit('AllProducts', productList)
+  })
+
+  socket.on('functionDeleteProduct', async ({ pid, uid }) => {
+    await deleteProduct({ pid, uid });
+    const productList = await getProducts({ limit: 20, page: 1, sort: null, query: null });
     Socketserverio.emit('AllProducts', productList)
   })
   socket.on('message', async (data) => {
@@ -105,19 +121,30 @@ Socketserverio.on('connection', async (socket) => {
   })
   socket.on('obtainCartInfo', async (cid) => {
     const products = await getProductsinCartByIdPagination(cid)
-    console.log("encontro los productos paginados" + products)
     Socketserverio.emit('cartProducts', products)
   })
 
-  socket.on('addNewProducttoCart', async ({ pid, cartid }) => {
-
+  socket.on('addNewProducttoCart', async ({ pid, cartid, uid }) => {
     const cid = cartid.substr(1, cartid.length - 1);
-    const newproductincart = await addCartProducts(pid, cid)
+    const newproductincart = await addCartProducts({ pid, cid, uid })
     Socketserverio.emit('newProductinCart', newproductincart)
   })
 })
 
 HTTPserver.on("error", (error) => console.log`Server error ${error}`)
+
+const swaggerOptions = {
+  definition: {
+    openapi: '3.0.1',
+    info: {
+      title: 'Documentazao',
+      description: 'Documentación',
+    },
+  },
+  apis: [`${__dirname}/docs/**/*.yaml`],
+};
+const specs = swaggerJSDoc(swaggerOptions);
+app.use('/apidocs', swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
 
 //Seccion de handlebars
 app.engine("handlebars", handlebars.engine())
@@ -133,7 +160,6 @@ app.use(cookieParser())
 
 
 app.use(session({
-
   store: MongoStore.create({
     mongoUrl: config.mongourl,
     ttl: 999999999999,
@@ -141,7 +167,6 @@ app.use(session({
   secret: 'secretCoder',
   resave: false,
   saveUninitialized: false,
-
 }))
 
 initiaizePassport();
@@ -150,7 +175,10 @@ app.use(compression({
   brotli: { enabled: true, zlib: {} }
 }))
 
-app.use(errorHandler)
+
+app.use(errors)
+
+
 app.use(passport.initialize())
 app.use(passport.session())
 app.use('/api', SessionRouter)
@@ -159,7 +187,8 @@ app.use('/api/products', ProductRoutes)
 app.use('/api/carts', CartRoutes)
 app.use('/api/chats', ChatsRoutes)
 app.use('/api/Mocks', MockRoutes)
+app.use('/api/Recover', PasswordRoutes)
+app.use('/api/users', UserRouter)
 app.use('/', ViewsRouter)
 
-//socketEvents(Socketserverio)
 

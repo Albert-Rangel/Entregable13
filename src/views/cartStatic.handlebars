@@ -1,14 +1,18 @@
 <div id="carta">
+    <p>
+        Cart Id :{{cid}}
+    </p>
     <a href="/api/carts/cartPurchase" class="boton">
         Buy your products
     </a>
+    
     <a href="http://localhost:8080/products" class="boton">Return to Main Catalog</a>
 
 </div>
 
 <div class="form-container">
     <div>
-        {{#each cid}}
+        {{#each allProducts}}
         <div class="card">
             <img src="{{this.id.thumbnail}}" alt="..." class="images">
             <div class="card-body">

@@ -6,15 +6,16 @@ import {
     getCarts,
     getCartById,
     getProductsinCartById,
-    getProductsinCartByIdPagination,
     deleteCart,
     deleteCartProduct,
     deleteAllCartProducts,
     updateCartProductQuantity,
-    updateCartProducts,
     purchaseCart
   } from "../dao/Mongo/CartManager.js";
 const CartRoute = Router();
+
+//obtiene todos los carros
+CartRoute.get('/', getCarts);
 
 //Obtiene un carro por su id
 CartRoute.get('/byId/:cid', getCartById);
@@ -22,11 +23,11 @@ CartRoute.get('/byId/:cid', getCartById);
 //Obtiene los productos de un carro por su id
 CartRoute.get('/CartProd/:cid', getProductsinCartById);
 
-//obtiene todos los carros
-CartRoute.get('/', getCarts);
-
 //Obtiene un carro por su id
-CartRoute.get('/:cid/purchase', purchaseCart);
+CartRoute.get('/:cid/purchase', purchaseCart); //API
+
+//Inicia el arro por su id
+CartRoute.get('/cartPurchase', purchaseCart); //WEB
 
 //crea un carro sin productos
 CartRoute.post('/', addCart)
@@ -43,12 +44,11 @@ CartRoute.delete('/SpecificCart/:cid', deleteCart)
 //Elimina todos los productos dentro de un carro especifico
 CartRoute.delete('/:cid', deleteAllCartProducts)
 
-//Actualiza el Quantity Dde un producto especifico en un carro especifico
+//Actualiza el Quantity de un producto especifico en un carro especifico
 CartRoute.put('/:cid/product/:pid', updateCartProductQuantity)
 
 //Actualiza los productos en un carro especifico
-CartRoute.put('/:cid', updateCartProducts)
+// CartRoute.put('/:cid', updateCartProducts) // NOVA
 
-CartRoute.get('/cartPurchase', purchaseCart);
 
 export default CartRoute;

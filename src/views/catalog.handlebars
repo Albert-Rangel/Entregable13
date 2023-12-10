@@ -9,7 +9,9 @@
     <p>
         Age :{{age}}
     </p>
-
+    <p>
+        UserId :{{uid}}
+    </p>
     <p>
         Role : {{role}}
     </p>
@@ -18,32 +20,46 @@
         LogOut
     </a>
 
-    {{!-- <button id="personalCatalog" class="boton" value="{{cart}}">
-        See your Cart
-    </button> --}}
+    <span id="uid" hidden="hidden">{{uid}}</span>
 
-    {{!-- <a href="/PersonalCart" class="boton">
-        See your Shoopin Cart
-    </a> --}}
     {{#if swUser}}
     <a href="/PersonalCartStatic" class="boton">
         See your Shooping Cart
     </a>
+    <a href="/api/users/premium/{{uid}}" class="boton">
+        Cambiar de rol
+    </a>
     {{/if}}
-    {{!-- <a href="/api/carts/cartPurchase" class="boton">
-        See your Shooping Cart
-    </a> --}}
 
     {{#if swAdmin}}
     <a href="/realTimeProducts" class="boton">
         Product Managment Section
     </a>
+    {{/if}}
 
+    {{#if swPremium}}
+    <a href="/PersonalCartStatic" class="boton">
+        See your Shooping Cart
+    </a>
+    <a href="/realTimeProducts" class="boton">
+        Product Managment Section
+    </a>
+    <a href="/api/users/premium/{{uid}}" class="boton">
+        Cambiar de rol
+    </a>
     {{/if}}
 
 </div>
 
 
+{{#if swPremium}}
+<div class="container-fluid" style="display: inline">
+    <h2>Product Catalog</h2>
+    <span id="counter" style="display: block"></span>
+    <div id="catalogo" class="row"></div>
+    <div id="cartid"> {{cart}}</div>
+</div>
+{{/if}}
 
 {{#if swUser}}
 <div class="container-fluid" style="display: inline">

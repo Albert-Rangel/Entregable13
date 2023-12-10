@@ -1,9 +1,13 @@
 
+import { query } from 'express';
 import productsService from '../../services/productsService.js';
-import CustomError from '../../services/errors/customError.js';
-import EError from '../../services/errors/enum.js';
-import { generateUserErrorInfo, generategeneralExepction } from '../../services/errors/info.js';
+import usersService from '../../services/usersService.js';
+
+import { logger } from '../../utils/logger.js';
+
 const productService = new productsService()
+const UsersService = new usersService()
+
 
 function ManageAnswer(answer) {
   const arrayAnswer = []
@@ -37,7 +41,6 @@ function ManageAnswer(answer) {
 
 export const getProducts = async (req, res) => {
   try {
-    console.log("entro en el get products")
     let limit = 0;
     let page = 0
     let sort_ = null
@@ -52,8 +55,7 @@ export const getProducts = async (req, res) => {
       query = req.query;
 
     } else {
-
-      limit = parseInt(req.query.limit, 10) == 0 || req.query.limit == null ? 20 : parseInt(req.query.limit, 10);
+      limit = parseInt(req.query.limit, 10) == 0 || req.query.limit == null ? 50 : parseInt(req.query.limit, 10);
       page = parseInt(req.query.page, 10) == 0 || req.query.page == null ? 1 : parseInt(req.query.page, 10);
       sort_ = req.query.sort;
       query = req.query.query;
@@ -73,8 +75,9 @@ export const getProducts = async (req, res) => {
     }
 
     return swWeb ? products : res.send(products);
+
   } catch (error) {
-    console.log(error)
+    logger.error("Error en ProductManager/getProducts: " + error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -87,23 +90,11 @@ export const addProduct = async (req, res) => {
     let swWeb = false
     let newproduct = {}
     if (req.body == undefined) {
-
       swWeb = true
       newproduct = req
     } else {
 
       newproduct = req.body
-
-      newproduct = null
-      if (!newproduct) {
-
-        CustomError.CreateError({
-          name: "General Exeption",
-          cause: generategeneralExepction("error supuesto por validacioens"),
-          message: "Error occured in ProductManager in addProduct",
-          code: EError.INVALID_TYPE_ERROR
-        })
-      }
     }
 
     const answer = await productService.addProductviaService(newproduct);
@@ -117,10 +108,10 @@ export const addProduct = async (req, res) => {
     return swWeb ? anwserObject : res.send(anwserObject);
 
   } catch (error) {
-    console.log(error)
-    return res.status(500).send({
+    logger.error("Error en ProductManager/addProduct: " + error)
+    return res.send({
       status: "500",
-      message:  `Se ha arrojado una exepcion: ${error} `
+      message: `Se ha arrojado una exepcion: ${error} `
     })
   }
 }
@@ -132,26 +123,19 @@ export const getProducts_ = async (req, res) => {
     const isString = (value) => typeof value === 'string';
 
     if (isString(products)) {
-      // const arrayAnswer = ManageAnswer(products)
-      // const error = {
-      //   status: arrayAnswer[0],
-      //   message: arrayAnswer[1]
-      // }
-      // return error
-
-      CustomError.CreateError({
-        name: " Exeption",
-        cause: generategeneralExepction("Error al obtener productos"),
-        message: "Error occured in ProductManager in getProducts_",
-        code: EError.ROUTING_ERROR
-      })
+      const arrayAnswer = ManageAnswer(products)
+      const error = {
+        status: arrayAnswer[0],
+        message: arrayAnswer[1]
+      }
+      return error
 
     }
 
     return res.send(products);
 
   } catch (error) {
-    console.log(error)
+    logger.error("Error en ProductManager/getProducts_: " + error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -160,8 +144,9 @@ export const getProducts_ = async (req, res) => {
 }
 export const getProductById = async (req, res) => {
   try {
-
     const pid = req.params.pid
+    console.log(pid)
+
     const found = await productService.getProductbyIDviaService({ _id: pid });
 
     const isString = (value) => typeof value === 'string';
@@ -176,7 +161,7 @@ export const getProductById = async (req, res) => {
     }
     return res.send(found);
   } catch (error) {
-    console.log(error)
+    logger.error("Error en ProductManager/getProductById: " + error)
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -185,28 +170,33 @@ export const getProductById = async (req, res) => {
 }
 export const updateProduct = async (req, res) => {
   try {
+    console.log("entrro en update product")
     let pid = 0
     let swINtern = false
     let updatedproduct = {}
 
     if (req.params == undefined) {
+      console.log("entrro eninterno")
+
       swINtern = true
       pid = req.pid;
-      updatedproduct.stock = req.stock;
+      if (req.newProduct != undefined) {
+        console.log("entrro en metodo update")
+        updatedproduct = req.newProduct; // cuando actualiza el producto por metod de update product
+      } else {
+        console.log("entrro en metodo correo")
 
-      if (!pid || !updatedproduct.stock) {
-        CustomError.CreateError({
-          name: "General Exeption",
-          cause: generategeneralExepction("error supuesto por validacioens"),
-          message: "Error occured in ProductManager in updateProduct",
-          code: EError.INVALID_TYPE_ERROR
-        })
+        updatedproduct = req.stock //cuando actualiza el stock que envia el correo
       }
 
     } else {
+      console.log("entrro en else mayor")
+
       pid = req.params.pid
       updatedproduct = req.body
     }
+    console.log(pid)
+    console.log(updatedproduct)
 
     let answer = await productService.updateProductviaService(pid, updatedproduct);
     const arrayAnswer = ManageAnswer(answer)
@@ -215,6 +205,8 @@ export const updateProduct = async (req, res) => {
       message: arrayAnswer[1]
     })
   } catch (error) {
+    logger.error("Error en ProductManager/updateProduct: " + error)
+
     return res.status(500).send({
       status: "500",
       message: `Se ha arrojado una exepcion: error`
@@ -222,34 +214,48 @@ export const updateProduct = async (req, res) => {
   }
 }
 export const deleteProduct = async (req, res) => {
+  let swWeb = false
   try {
     let pid = 0
+    let uid = 0
 
     if (req.params == undefined) {
-      pid = req
+      swWeb = true
+      pid = req.pid
+      uid = req.uid
+
     } else {
       pid = req.params.pid
+      uid = req.query.uid
     }
 
-    if (!pid) {
-      CustomError.CreateError({
-        name: "General Exeption",
-        cause: generategeneralExepction("error supuesto por validacioens"),
-        message: "Error occured in ProductManager in deleteProduct",
-        code: EError.INVALID_TYPE_ERROR
+    var swSuccess = await UsersService.verifyProductPermission(uid, pid)
+
+    if (!swSuccess) {
+
+      return swWeb ? swSuccess : res.status(arrayAnswer[0]).send({
+        status: arrayAnswer[0],
+        message: arrayAnswer[1]
       })
     }
+
     let answer = await productService.deletProductviaService({ _id: pid });
     const arrayAnswer = ManageAnswer(answer)
-    return res.status(arrayAnswer[0]).send({
+    return swWeb ? swSuccess : res.status(arrayAnswer[0]).send({
       status: arrayAnswer[0],
       message: arrayAnswer[1]
     })
   }
   catch (error) {
-    return `ERR|Error generico. Descripcion :${error}`
+    logger.error("Error en ProductManager/deleteProduct: " + error)
+    return swWeb ? `ERR|Error generico. Descripcion :${error}` : res.status(500).send({
+      status: "500",
+      message: `Se ha arrojado una exepcion: error`
+    })
   }
 }
+
+
 
 
 

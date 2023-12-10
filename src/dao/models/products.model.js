@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import mongoosePaginate from "mongoose-paginate-v2" 
+import mongoosePaginate from "mongoose-paginate-v2"
 
 const productsCollection = "products";
 
@@ -21,8 +21,8 @@ const produtsSchema = mongoose.Schema({
     },
     code: {
         type: String,
-        unique : true, 
-        dropDups: true ,
+        unique: true,
+        dropDups: true,
         required: true,
         index: true,
 
@@ -43,8 +43,12 @@ const produtsSchema = mongoose.Schema({
         index: true,
 
     },
+    owner: {
+        type: String,
+        default: "admin"
+    },
 })
 produtsSchema.plugin(mongoosePaginate);
-const productsModel= mongoose.model(productsCollection,produtsSchema);
+const productsModel = mongoose.model(productsCollection, produtsSchema);
 
-export {productsModel}
+export { productsModel }

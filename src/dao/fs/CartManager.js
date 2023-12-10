@@ -29,7 +29,6 @@ class CartManager {
   async validateParameters(product) {
 
     if (!Array.isArray(product.products) || product.products === null) {
-      console.log("el array falso")
 
       return false;
     }
